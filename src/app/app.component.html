@@ -42,8 +42,8 @@
       </mat-checkbox>
     </span>
     </td>
-    <td mat-footer-cell *matFooterCellDef> <span *ngIf="totalm">{{totalm | currency}}</span>
-      <span *ngIf="!totalm"> </span> <br> <br>
+    <td mat-footer-cell *matFooterCellDef> <span *ngIf="totalm >0 && !offer">{{totalm | currency}}</span>
+      <span *ngIf="totalm > 0 && offerl"> <s>{{totalm | currency}}</s></span> <br> <br>
       <span *ngIf="offer">Offer 1 : {{totalom | currency}}</span>
     </td>
   </ng-container>
